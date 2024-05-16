@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema.json
+name: l3mode
+chainId: 74638
+nativeToken:
+  name: Eth # String
+  symbol: ETH # String
+  decimals: 18 # Number
+domainId: 74638
+protocol: ethereum
+rpcUrls:
+  - http: https://rpc-grumpy-tomato-gazelle-itmpl2y47f.t.conduit.xyz

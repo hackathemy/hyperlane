@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema.json
+tokens:
+  - chainName: l3mode
+    standard: EvmHypCollateral
+    name: aa
+    symbol: bb
+    decimals: 18
+    addressOrDenom: "0x36D4536881655f299ef166Eb0d84d8496E35Cc0D"
+    collateralAddressOrDenom: "0x264d9B5437185B13066397c2bc1418F7b8ed817C"
+    connections:
+      - token: ethereum|sepolia|0xB11C23C914cc471ce2767fBe8220830D2C07ca22
+  - chainName: sepolia
+    standard: EvmHypSynthetic
+    name: aa
+    symbol: bb
+    decimals: 18
+    addressOrDenom: "0xB11C23C914cc471ce2767fBe8220830D2C07ca22"
+    connections:
+      - token: ethereum|l3mode|0x36D4536881655f299ef166Eb0d84d8496E35Cc0D

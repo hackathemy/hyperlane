@@ -12,7 +12,7 @@ const MODE = {
   FILE: 'l3mode-sepolia-config.yaml',
   CHAIN: 'l3mode',
   PROVIDER : new ethers.JsonRpcProvider(process.env.MODE_PROVIDER),
-  TOKEN: '0xfdb804EEF58Cb5eF63A5F9310b8a74E64dC5401B',
+  TOKEN: '0x7e53E87c791D6AFcfAbA084A91C2aF845aE7495D',
 }
 
 const GELATO = {
@@ -20,15 +20,15 @@ const GELATO = {
   FILE: 'l3Gelato-sepolia-config.yaml',
   CHAIN: 'l3Gelato',
   PROVIDER: new ethers.JsonRpcProvider(process.env.GELATO_PROVIDER),
-  TOKEN: '0x6b175474e89094c44da98b954eedeac495271d0f',
+  TOKEN: '0x03D9a13846cdD4F1B04641C96C906B1a709af228',
 }
 
 const CALDERA = {
   NAME : 'CALDERA',
   FILE: 'l3Caldera-sepolia-config.yaml',
-  CHAIN: 'l3Caldera',
+  CHAIN: 'l3caldera',
   PROVIDER: new ethers.JsonRpcProvider(process.env.CALDERA_PROVIDER),
-  TOKEN: '0x6b175474e89094c44da98b954eedeac495271d0f',
+  TOKEN: '0x03D9a13846cdD4F1B04641C96C906B1a709af228',
 }
 
 

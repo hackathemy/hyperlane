@@ -33,10 +33,17 @@ const CALDERA = {
 
 
 /* GET users listing. */
-router.post('/', async function(req, res, next) {
+router.post('/bridge', async function(req, res, next) {
   let {chain, recipient, amount } = req.body;
 
   amount = ethers.utils.parseEther(amount.toString())
+  recipient = recipient.trim();
+
+  if(recipient.length !== 42) {
+    res.status(500).send('잘못된 recipient 주소입니다.');
+    return;
+  }
+
   let fileCommand = '';
   let chainCommand=''
 
@@ -74,7 +81,17 @@ router.post('/', async function(req, res, next) {
 });
 router.post('/transfer', async function(req, res, next) {
    try {
-     const {chain, recipient, amount } = req.body;
+     let {chain, recipient, amount } = req.body;
+     recipient = recipient.trim();
+
+     if(recipient.length !== 42) {
+       res.status(500).send('잘못된 recipient 주소입니다.');
+       return;
+     }
+     console.log(req.body)
+     console.log('chain', chain);
+     console.log('recipient', recipient);
+     console.log('amount', amount);
      let provider;
      let tokenAddress;
      if(chain === 'MODE') {
@@ -90,8 +107,8 @@ router.post('/transfer', async function(req, res, next) {
        res.status(500).send('잘못된 chain 이름입니다.');
        return;
      }
-
-     const wallet = new ethers.Wallet(KEY, provider);
+    console.log("provider", provider);
+     const wallet = new ethers.Wallet("0x"+KEY, provider);
 
      const tokenContract = new ethers.Contract(tokenAddress, [
        'function transfer(address to, uint256 amount) returns (bool)'
@@ -102,7 +119,7 @@ router.post('/transfer', async function(req, res, next) {
      // 트랜잭션 해시 반환
      res.json({ transactionHash: tx.hash });
 
-   }catch (e){
+   }catch (error){
      console.error('에러 발생:', error);
      res.status(500).json({ error: '서버에서 오류가 발생했습니다.' });
    }

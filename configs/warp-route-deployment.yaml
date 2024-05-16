@@ -1,6 +1,6 @@
-l3mode:
+l3gelato:
   type: collateral
-  token: "0x264d9B5437185B13066397c2bc1418F7b8ed817C"
+  token: "0x03D9a13846cdD4F1B04641C96C906B1a709af228"
   isNft: false
 sepolia:
   type: synthetic

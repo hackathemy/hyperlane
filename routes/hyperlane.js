@@ -12,23 +12,23 @@ const MODE = {
   FILE: 'l3mode-sepolia-config.yaml',
   CHAIN: 'l3mode',
   PROVIDER : new ethers.JsonRpcProvider(process.env.MODE_PROVIDER),
-  TOKEN: '0x7e53E87c791D6AFcfAbA084A91C2aF845aE7495D',
+  TOKEN: '0x697DAa49c4d93717cDdf6a9BE7e66421f3A26E66',
 }
 
 const GELATO = {
   NAME : 'GELATO',
-  FILE: 'l3Gelato-sepolia-config.yaml',
-  CHAIN: 'l3Gelato',
+  FILE: 'l3gelato-sepolia-config.yaml',
+  CHAIN: 'l3gelato',
   PROVIDER: new ethers.JsonRpcProvider(process.env.GELATO_PROVIDER),
   TOKEN: '0x03D9a13846cdD4F1B04641C96C906B1a709af228',
 }
 
 const CALDERA = {
   NAME : 'CALDERA',
-  FILE: 'l3Caldera-sepolia-config.yaml',
+  FILE: 'l3caldera-sepolia-config.yaml',
   CHAIN: 'l3caldera',
   PROVIDER: new ethers.JsonRpcProvider(process.env.CALDERA_PROVIDER),
-  TOKEN: '0x03D9a13846cdD4F1B04641C96C906B1a709af228',
+  TOKEN: '0xa7835945fed326E5CA05513CC13799a62860B13C',
 }
 
 
@@ -37,7 +37,7 @@ router.post('/bridge', async function(req, res, next) {
   let {chain, recipient, amount } = req.body;
 
   try {
-    amount = ethers.utils.parseEther(amount.toString())
+    amount = ethers.parseEther(amount.toString())
     recipient = recipient.trim();
 
     if(recipient.length !== 42) {
@@ -62,7 +62,7 @@ router.post('/bridge', async function(req, res, next) {
       return;
     }
 
-    let command = `hyperlane send transfer --warp deployments/warp_routes/BB/${fileCommand} --wei ${amount} --key ${KEY} --origin ${chainCommand} --destination sepolia --recipient ${recipient}`;
+    let command = `hyperlane send transfer --warp deployments/warp_routes/HACKATOKEN/${fileCommand} --wei ${amount} --key ${KEY} --origin ${chainCommand} --destination sepolia --recipient ${recipient}`;
     console.log('command', command);
     console.log('command start')
     exec(command, (error, stdout, stderr) => {

@@ -10,4 +10,8 @@ l3caldera:
   threshold: 1
   validators:
     - "0x2FCCba2f198066c5Ea3e414dD50F78E25c3aF552"
+l3gelato:
+  threshold: 1
+  validators:
+    - "0x2FCCba2f198066c5Ea3e414dD50F78E25c3aF552"
 

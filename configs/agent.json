@@ -15,6 +15,34 @@
       "staticAggregationIsmFactory": "0x1cfbEA828761a8aB06DCbaeEf28471d8850372d5",
       "staticAggregationHookFactory": "0xb6B0DeCb6CD002b7329558c9196e0FDb7EABdd40",
       "domainRoutingIsmFactory": "0x35D36d15F4CC0F3551aA47e09C3fF44bab5f31e9",
+      "interchainSecurityModule": "0x94D5F646c2c96A9e29827bd0057181acc4f19CeD",
+      "domainRoutingIsm": "0x94D5F646c2c96A9e29827bd0057181acc4f19CeD",
+      "merkleTreeHook": "0xFEE23D3EC0d6E6D20D3C5e683D3C06e5cff9B3f2",
+      "protocolFee": "0x9a8166BdA7B7B6719702AAC1eA5e44fe4227E0d2",
+      "testRecipient": "0xB2516301c2a1705F5cdae186351157EC6Cefcb8c",
+      "mailbox": "0x3EA80fA63b1E351f298033D299fBd7b21ccaBF70",
+      "proxyAdmin": "0x3d3eAB6C06D4DD42e21C4D242354D7654F617557",
+      "validatorAnnounce": "0x49bd949B2083252Fe407d3d6eCDefb9b52429D3C",
+      "interchainGasPaymaster": "0x0000000000000000000000000000000000000000",
+      "index": {
+        "from": 5346
+      }
+    },
+    "l3gelato": {
+      "name": "l3gelato",
+      "chainId": 123420111,
+      "domainId": 123420111,
+      "protocol": "ethereum",
+      "rpcUrls": [
+        {
+          "http": "https://rpc.opcelestia-raspberry.gelato.digital"
+        }
+      ],
+      "staticMerkleRootMultisigIsmFactory": "0x536569DDe442D95aD586E25662176513737434d8",
+      "staticMessageIdMultisigIsmFactory": "0x89127808f626f3058B321a0B9085e7455b0C94ee",
+      "staticAggregationIsmFactory": "0x1cfbEA828761a8aB06DCbaeEf28471d8850372d5",
+      "staticAggregationHookFactory": "0xb6B0DeCb6CD002b7329558c9196e0FDb7EABdd40",
+      "domainRoutingIsmFactory": "0x35D36d15F4CC0F3551aA47e09C3fF44bab5f31e9",
       "interchainSecurityModule": "0x4361b23f092Ac1b8FDc7084652AB3faA47C27959",
       "domainRoutingIsm": "0x4361b23f092Ac1b8FDc7084652AB3faA47C27959",
       "merkleTreeHook": "0xFEE23D3EC0d6E6D20D3C5e683D3C06e5cff9B3f2",
@@ -25,7 +53,7 @@
       "validatorAnnounce": "0x49bd949B2083252Fe407d3d6eCDefb9b52429D3C",
       "interchainGasPaymaster": "0x0000000000000000000000000000000000000000",
       "index": {
-        "from": 5346
+        "from": 6442708
       }
     },
     "l3mode": {
@@ -48,11 +76,11 @@
       "staticAggregationIsmFactory": "0x1cfbEA828761a8aB06DCbaeEf28471d8850372d5",
       "staticAggregationHookFactory": "0xb6B0DeCb6CD002b7329558c9196e0FDb7EABdd40",
       "domainRoutingIsmFactory": "0x35D36d15F4CC0F3551aA47e09C3fF44bab5f31e9",
-      "interchainSecurityModule": "0x94D5F646c2c96A9e29827bd0057181acc4f19CeD",
-      "domainRoutingIsm": "0x94D5F646c2c96A9e29827bd0057181acc4f19CeD",
+      "interchainSecurityModule": "0xE7DDa0b164230920dD28B57a6BC607d9c369D360",
+      "domainRoutingIsm": "0xE7DDa0b164230920dD28B57a6BC607d9c369D360",
       "merkleTreeHook": "0xFEE23D3EC0d6E6D20D3C5e683D3C06e5cff9B3f2",
       "protocolFee": "0x9a8166BdA7B7B6719702AAC1eA5e44fe4227E0d2",
-      "testRecipient": "0x3d078BA170fda4C22fb429E2c6B21D5040Ff5c7A",
+      "testRecipient": "0x7a0c4cAbc247176d1db070AC24177d1BD5763194",
       "mailbox": "0x3EA80fA63b1E351f298033D299fBd7b21ccaBF70",
       "proxyAdmin": "0x3d3eAB6C06D4DD42e21C4D242354D7654F617557",
       "validatorAnnounce": "0x49bd949B2083252Fe407d3d6eCDefb9b52429D3C",
@@ -103,7 +131,7 @@
       "interchainAccountIsm": "0x83a3068B719F764d413625dA77468ED74789ae02",
       "interchainAccountRouter": "0x8e131c8aE5BF1Ed38D05a00892b6001a7d37739d",
       "interchainGasPaymaster": "0x6f2756380FD49228ae25Aa7F2817993cB74Ecc56",
-      "interchainSecurityModule": "0x4ad7A60D8Fbb8d52dad8D9bda4831bbe4817fB84",
+      "interchainSecurityModule": "0x9B1595ebECF0fcAbd950666dF616C1E1054e481b",
       "mailbox": "0xfFAEF09B3cd11D9b20d1a19bECca54EEC2884766",
       "merkleTreeHook": "0x4917a9746A7B6E0A57159cCb7F5a6744247f2d0d",
       "pausableHook": "0xa68022e53Fd28119D07C8336a8eC84A298Fd38Fd",
@@ -114,11 +142,11 @@
       "staticMerkleRootMultisigIsmFactory": "0x0a71AcC99967829eE305a285750017C4916Ca269",
       "staticMessageIdMultisigIsmFactory": "0xFEb9585b2f948c1eD74034205a7439261a9d27DD",
       "storageGasOracle": "0x71775B071F77F1ce52Ece810ce084451a3045FFe",
-      "testRecipient": "0x53227Ce361eEa1039605D0F4a6b54Ef5bc454abB",
+      "testRecipient": "0x5dd5F2a965307aD2F18F7158Bc1D4C7A73024fA1",
       "testTokenRecipient": "0x031AD9c560D37baC7d6Bd2d27A2443bAfd10101A",
       "timelockController": "0x0000000000000000000000000000000000000000",
       "validatorAnnounce": "0xE6105C59480a1B7DD3E4f28153aFdbE12F4CfCD9",
-      "domainRoutingIsm": "0x4ad7A60D8Fbb8d52dad8D9bda4831bbe4817fB84",
+      "domainRoutingIsm": "0x9B1595ebECF0fcAbd950666dF616C1E1054e481b",
       "customHook": "0x4917a9746A7B6E0A57159cCb7F5a6744247f2d0d",
       "index": {
         "from": 4517401

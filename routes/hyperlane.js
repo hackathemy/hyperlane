@@ -35,7 +35,7 @@ const CALDERA = {
 /* GET users listing. */
 router.post('/bridge', async function(req, res, next) {
   let {chain, recipient, amount } = req.body;
-
+  console.log(req.body)
   try {
     amount = ethers.parseEther(amount.toString())
     recipient = recipient.trim();

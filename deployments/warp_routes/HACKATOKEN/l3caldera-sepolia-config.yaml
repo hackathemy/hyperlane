@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema.json
+tokens:
+  - chainName: l3caldera
+    standard: EvmHypCollateral
+    name: hackaToken
+    symbol: hackaToken
+    decimals: 18
+    addressOrDenom: "0x087f0376672AcADCaF82CCb872874683adD035F0"
+    collateralAddressOrDenom: "0xa7835945fed326E5CA05513CC13799a62860B13C"
+    connections:
+      - token: ethereum|sepolia|0x80677713169ff4269B98c86C409926f050c6F92a
+  - chainName: sepolia
+    standard: EvmHypSynthetic
+    name: hackaToken
+    symbol: hackaToken
+    decimals: 18
+    addressOrDenom: "0x80677713169ff4269B98c86C409926f050c6F92a"
+    connections:
+      - token: ethereum|l3caldera|0x087f0376672AcADCaF82CCb872874683adD035F0

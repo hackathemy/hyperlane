@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema.json
+name: l3gelato
+chainId: 123420111
+nativeToken:
+  name: Eth # String
+  symbol: ETH # String
+  decimals: 18 # Number
+domainId: 123420111
+protocol: ethereum
+rpcUrls:
+  - http: https://rpc.opcelestia-raspberry.gelato.digital

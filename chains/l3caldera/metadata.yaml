@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema.json
+name: l3caldera
+chainId: 9719618
+nativeToken:
+  name: Eth # String
+  symbol: ETH # String
+  decimals: 18 # Number
+domainId: 9719618
+protocol: ethereum
+rpcUrls:
+  - http: https://happy-olives-kick.rpc.caldera.xyz/http
